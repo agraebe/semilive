@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle semilive",
+        "command": "semilive:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "semilive",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "semilive:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
