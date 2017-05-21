@@ -9,4 +9,4 @@ Got inspired by @toji from his talk at Google I/O. He created an automated way f
 - [ ] clean-up
 
 # Credits
-Inspired by (toji's sublime plugin for live coding)[https://github.com/toji/semilive]
+Inspired by [toji's sublime plugin for live coding](https://github.com/toji/semilive)
