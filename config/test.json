@@ -1,0 +1,44 @@
+[{
+    "comment": "Add new method at cursor position",
+
+    "insert": "\n// source: https://raw.githubusercontent.com/agraebe/materialize/gh-pages/source/jquery.materialize.js\n",
+    "instant": true
+  },
+
+  {
+    "comment": "Add new method below specific comment",
+
+    "after": "// apply list item style",
+    "insert": "\n$(this).children().each(function(i) {\n$(this).addClass('list-item'); \n$(this).prepend('<div class=\"circle\">'); \n$('.circle').css({ \ndisplay: 'block', \nposition: 'relative',\nopacity: '0'\n,top: '0'\n,left: '0'\n});\n});\n"
+  },
+
+  {
+    "comment": "Replace color code",
+
+    "replace": "#dadada",
+    "insert": "#efefef"
+  },
+
+  {
+    "comment": "Complete wrong element else statement with multiple commands",
+
+    "after": "// wrong element given",
+    "insert": [
+      "console.log('Hmm.. I need an UL element for styling purposes!');",
+      "return null;"
+    ],
+    "highlight": false
+  },
+
+  [{
+      "comment": "Execute a set of operations together",
+
+      "after": "// set new position",
+      "insert": "$(this).find('.circle').css({top: newTop, left: newLeft});"
+    },
+    {
+      "after": "// animate card background",
+      "insert": "$(this).css('backgroundColor', settings.backgroundColor);"
+    }
+  ]
+]

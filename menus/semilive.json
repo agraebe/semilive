@@ -2,8 +2,16 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle semilive",
-        "command": "semilive:toggle"
+        "label": "< Previous Step",
+        "command": "semilive:prev"
+      },
+      {
+        "label": "> Next Step",
+        "command": "semilive:next"
+      },
+      {
+        "label": "Reset",
+        "command": "semilive:reset"
       }
     ]
   },
@@ -12,11 +20,19 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "semilive",
+          "label": "Semilive",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "semilive:toggle"
+              "label": "< Previous Step",
+              "command": "semilive:prev"
+            },
+            {
+              "label": "> Next Step",
+              "command": "semilive:next"
+            },
+            {
+              "label": "Reset",
+              "command": "semilive:reset"
             }
           ]
         }

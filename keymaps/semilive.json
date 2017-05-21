@@ -1,5 +1,6 @@
 {
   "atom-workspace": {
-    "ctrl-alt-o": "semilive:toggle"
+    "ctrl-alt-,": "semilive:prev",
+    "ctrl-alt-.": "semilive:next"
   }
 }

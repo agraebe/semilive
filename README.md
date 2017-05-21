@@ -1,5 +1,12 @@
-# semilive package
+# SemiLive Atom Plugin
+Got inspired by @toji from his talk at Google I/O. He created an automated way for semi-live coding sessions on stage. Unfortunately, he uses Sublime Text. So, here we go my fellow Atom users!
 
-A short description of your package.
+# Todos
+[ ] replace with char-by-char
+[ ] sub-script execution
+[ ] dynamic menu items for process details
+[ ] easier way to maintain (create and load) scripts
+[ ] clean-up
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+# Credits
+Inspired by (toji's sublime plugin for live coding)[https://github.com/toji/semilive]
