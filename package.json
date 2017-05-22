@@ -3,11 +3,17 @@
   "main": "./lib/semilive",
   "version": "0.1.0",
   "description": "A short description of your package",
-  "keywords": [],
+  "keywords": [
+    "atom-plugin",
+    "presentation",
+    "livecoding"
+  ],
   "activationCommands": {
-    "atom-workspace": "semilive:next",
-    "atom-workspace": "semilive:prev",
-    "atom-workspace": "semilive:reset"
+    "atom-workspace": [
+      "semilive:next",
+      "semilive:prev",
+      "semilive:reset"
+    ]
   },
   "repository": "https://github.com/agraebe/semilive",
   "license": "MIT",
