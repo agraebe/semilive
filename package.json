@@ -2,7 +2,7 @@
   "name": "semilive",
   "main": "./lib/semilive",
   "version": "0.1.0",
-  "description": "A short description of your package",
+  "description": "Advance through a series of text injection steps, making it appear as if you are typing as you go. Useful for doing Live Code walkthroughs",
   "keywords": [
     "atom-plugin",
     "presentation",
@@ -21,6 +21,14 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "atom": "^1.0.0",
     "babel-polyfill": "^6.23.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1"
   }
 }

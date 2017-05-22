@@ -8,7 +8,8 @@ import Semilive from '../lib/semilive';
 // or `fdescribe`). Remove the `f` to unfocus the block.
 
 describe('Semilive', () => {
-  let workspaceElement, activationPromise;
+  let workspaceElement,
+    activationPromise;
 
   beforeEach(() => {
     workspaceElement = atom.views.getView(atom.workspace);
@@ -25,17 +26,15 @@ describe('Semilive', () => {
       // activated.
       atom.commands.dispatch(workspaceElement, 'semilive:toggle');
 
-      waitsForPromise(() => {
-        return activationPromise;
-      });
+      waitsForPromise(() => activationPromise);
 
       runs(() => {
         expect(workspaceElement.querySelector('.semilive')).toExist();
 
-        let semiliveElement = workspaceElement.querySelector('.semilive');
+        const semiliveElement = workspaceElement.querySelector('.semilive');
         expect(semiliveElement).toExist();
 
-        let semilivePanel = atom.workspace.panelForItem(semiliveElement);
+        const semilivePanel = atom.workspace.panelForItem(semiliveElement);
         expect(semilivePanel.isVisible()).toBe(true);
         atom.commands.dispatch(workspaceElement, 'semilive:toggle');
         expect(semilivePanel.isVisible()).toBe(false);
@@ -57,13 +56,11 @@ describe('Semilive', () => {
       // activated.
       atom.commands.dispatch(workspaceElement, 'semilive:toggle');
 
-      waitsForPromise(() => {
-        return activationPromise;
-      });
+      waitsForPromise(() => activationPromise);
 
       runs(() => {
         // Now we can test for view visibility
-        let semiliveElement = workspaceElement.querySelector('.semilive');
+        const semiliveElement = workspaceElement.querySelector('.semilive');
         expect(semiliveElement).toBeVisible();
         atom.commands.dispatch(workspaceElement, 'semilive:toggle');
         expect(semiliveElement).not.toBeVisible();
