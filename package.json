@@ -1,7 +1,7 @@
 {
   "name": "semilive",
   "main": "./lib/semilive",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Advance through a series of text injection steps, making it appear as if you are typing as you go. Useful for doing Live Code walkthroughs",
   "keywords": [
     "atom-plugin",
